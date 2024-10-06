@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Link from "next/link";
 
 const contacts = [
   {icon: "✉", textContent:"stevenanongo2@gmail.com "}, 
@@ -63,7 +64,7 @@ export default function Home() {
               </div>
 
               <div className="flex gap-4">
-                {social.map(({link, appName}) => <span className="text-slate-600 shadow-md text-xs rounded-full bg-slate-100 p-2 w-fit cursor-pointer" key={link}><span className="opacity-15">🔗</span> {appName}</span>)}
+                {social.map(({link, appName}) => <Link className="text-slate-600 shadow-md text-xs rounded-full bg-slate-100 p-2 w-fit cursor-pointer" key={link} href={link}><span className="opacity-15">🔗</span> {appName}</Link>)}
               </div>
 
 
