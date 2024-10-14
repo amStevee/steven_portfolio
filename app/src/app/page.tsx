@@ -5,11 +5,11 @@ import Link from "next/link";
 const contacts = [
   {icon: "✉", textContent:"stevenanongo2@gmail.com "}, 
   {icon: '📞', textContent: "+234 816 5649 190 "}, 
-  {icon: "📍", textContent: "FCT Abuja, Nigeria."}];
+  {icon: "📍", textContent: "Abuja, Nigeria."}];
 
 const techStack = [
   {icon: '📞', tech: " Node.js "}, 
-  {icon: '📞', tech: " Exp.js "},
+  {icon: '📞', tech: " Express.js "},
   {icon: '📞', tech: " PSQL "},
   {icon: '📞', tech: " React "},
   {icon: '📞', tech: " Typescript "},
@@ -24,11 +24,12 @@ export default function Home() {
   return (
     <>
       <header className="bg-gradient-defang flex flex-col gap-10">
-        <nav className="flex justify-between container mx-auto p-6 text-white bg-white bg-opacity-5">
+        <nav className="flex justify-between container mx-auto p-6 text-white bg-white bg-opacity-5 sticky top-2 bg-scroll">
           <h2 className=" font-bold">Steven Anongo</h2>
-          {/* <ul>
-            <li>Home</li>
-          </ul> */}
+          <ul className="flex justify-between gap-4">
+            <li><Link href={'#'}>Home</Link></li>
+            <li><Link href={'#projects'}>Project</Link></li>
+          </ul>
         </nav>
   
 
@@ -44,7 +45,7 @@ export default function Home() {
               <div className="flex flex-col gap-2">
               <p className="text-slate-600 uppercase font-sans font-medium">Hello World, i am</p>
               <h4 className="text-4xl font-bold">STEVEN ANONGO</h4>
-              <h6 className="font-bold text-slate-700">SOFTWARE ENGINEER</h6>
+              <h6 className="font-bold text-slate-700">FULLSTACK SOFTWARE DEVELOPER</h6>
               <p className="text-slate-500 text-sm text-justify">As a passionate software developer, my passion for continuous learning drives me to stay updated with the latest trends and frameworks, ensuring I can adapt and innovate. Let’s connect and find the perfect tech to bring your ideas to life!</p>
               </div>
 
@@ -72,8 +73,21 @@ export default function Home() {
         </div>
 
     </header>
-    <main className="container ">
-      
+    <main className="container mx-auto mt-[150px] flex flex-col gap-8">
+      <section className="flex flex-col gap-4 p-4" id="projects">
+        <h1 className="text-3xl font-bold text-slate-500 uppercase">Projects</h1>
+        <div className="grid grid-cols-3 shadow-lg">
+          <Image src={''} alt={""} />
+          <div className="col-span-2 flex flex-col p-4 gap-2">
+            <h4 className="font-bold">Project Title</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, velit.</p>
+            <Link href={'#'}>project link</Link>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col gap-4 p-4" id="tech-stack">
+        <h1 className="text-3xl font-bold text-slate-500 uppercase">Tech Stack</h1>
+      </section>
     </main>
     </>
   );
