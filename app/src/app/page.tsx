@@ -46,7 +46,7 @@ export default function Home() {
               <p className="text-slate-600 uppercase font-sans font-medium">Hello World, i am</p>
               <h4 className="text-4xl font-bold">STEVEN ANONGO</h4>
               <h6 className="font-bold text-slate-700">FULLSTACK SOFTWARE DEVELOPER</h6>
-              <p className="text-slate-500 text-sm text-justify">As a passionate software developer, my passion for continuous learning drives me to stay updated with the latest trends and frameworks, ensuring I can adapt and innovate. Let’s connect and find the perfect tech to bring your ideas to life!</p>
+              <p className="text-slate-500 text-sm text-justify">As a passionate software developer, my passion for continuous learning drives me to stay updated with the latest trends and frameworks, ensuring I can adapt and innovate. Let&apos;s connect and find the perfect tech to bring your ideas to life!</p>
               </div>
 
               <div className="flex flex-col gap-3">
